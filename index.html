@@ -1,212 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-16" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <title>Formulario de encuesta</title>
-    </head>
 
-    <body>
-        <div class="contenedor">
-            <header class="header">
-                <h1 id="title" class="text-center">Formulario VideoJuegos</h1>
-                <p id="description" class="description text-center">
-                    Gracias por tomarse el tiempo para ayudarnos a saber que
-                    juegos te gustan
-                </p>
-            </header>
-            <form id="survey-form">
-                <div class="form-group">
-                    <label id="name-label" for="name">Nombre</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="form-control"
-                        placeholder="Introduzca su Nombre"
-                        required
-                    />
-                </div>
-                <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        class="form-control"
-                        placeholder="Introduzca su Email"
-                        required
-                    />
-                </div>
-                <div class="form-group">
-                    <label id="number-label" for="number"
-                        >Edad<span class="opcionalas">(opcional)</span></label
-                    >
-                    <input
-                        type="number"
-                        name="age"
-                        id="number"
-                        min="10"
-                        max="99"
-                        class="form-control"
-                        placeholder="Edad"
-                    />
-                </div>
-                <div class="form-group">
-                    <p>Que tipo de videojuegos te gusta?</p>
-                    <select
-                        id="dropdown"
-                        name="role"
-                        class="form-control"
-                        required
-                    >
-                        <option disabled selected value>
-                            Selecciona el que mas te guste
-                        </option>
-                        <option value="student">Shooters</option>
-                        <option value="job">Depotes</option>
-                        <option value="learner">Aventura</option>
-                        <option value="preferNo">Estrategia</option>
-                        <option value="other">Otros</option>
-                    </select>
-                </div>
+<head>
+   <meta charset="UTF-16" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+   <link rel="stylesheet" href="./styles/style.css" />
+   <title>Formulario de encuesta</title>
+</head>
 
-                <div class="form-group">
-                    <p>Que tan bueno eres jugando?</p>
-                    <label>
-                        <input
-                            name="user-recommend"
-                            value="Hacker"
-                            type="radio"
-                            class="input-radio"
-                        />Hacker</label
-                    >
-                    <label>
-                        <input
-                            name="user-recommend"
-                            value="Pro"
-                            type="radio"
-                            class="input-radio"
-                        />Pro</label
-                    >
+<body>
+   <header>
+      <h1 id="title">Formulario VideoJuegos</h1>
+      <p id="description">
+         Gracias por tomarse el tiempo para ayudarnos a saber que
+         juegos te gustan
+      </p>
+   </header>
+   <form id="survey-form">
+      <div>
+         <label id="name-label" for="name">Nombre</label>
+         <input class="form-control" type="text" name="name" id="name" placeholder="Introduzca su Nombre" required />
+      </div>
+      <div>
+         <label id="email-label" for="email">Email</label>
+         <input class="form-control" type="email" name="email" id="email" placeholder="Introduzca su Email" required />
+      </div>
+      <div>
+         <label id="number-label" for="number">Edad <span>(opcional)</span></label>
+         <input class="form-control" type="number" name="number" id="number" min="10" max="99" placeholder="Edad" />
+      </div>
+      <div>
+         <label>¿Que tipo de videojuegos te gusta?</label>
+         <select class="form-control" id="dropdown" name="role" required>
+            <option disabled selected value>
+               Selecciona el que mas te guste
+            </option>
+            <option value="Shooters">Shooters</option>
+            <option value="Deportes">Depotes</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Estrategia">Estrategia</option>
+            <option value="Otros">Otros</option>
+         </select>
+      </div>
+      <div>
+         <label>¿Que tan bueno eres jugando?</label>
+         <label>
+            <input class="input-radio" name="user-recommend" value="Hacker" type="radio" />Hacker
+         </label>
+         <label>
+            <input class="input-radio" name="user-recommend" value="Pro" type="radio" />Pro
+         </label>
+         <label>
+            <input class="input-radio" name="user-recommend" value="Noob" type="radio" checked />Noob
+         </label>
+      </div>
+      <div>
+         <label class="label--checkbox">
+            ¿Cual de estos juegos te gustan?
+         </label>
 
-                    <label
-                        ><input
-                            name="user-recommend"
-                            value="Noob"
-                            type="radio"
-                            class="input-radio"
-                            checked
-                        />Noob</label
-                    >
-                </div>
+         <label><input name="prefer" value="GTAV" type="checkbox" class="input-checkbox" />Grand Theft Auto V</label>
+         <label><input name="prefer" value="Among-Us" type="checkbox" class="input-checkbox" />Among Us</label>
+         <label><input name="prefer" value="lol" type="checkbox" class="input-checkbox" />League of Legends</label>
+         <label><input name="prefer" value="Fornite" type="checkbox" class="input-checkbox" />Fornite</label>
+         <label><input name="prefer" value="Fall-Guys" type="checkbox" class="input-checkbox" />Fall Guys</label>
+         <label><input name="prefer" value="GOW" type="checkbox" class="input-checkbox" />God Of War</label>
+         <label><input name="prefer" value="Minecraft" type="checkbox" class="input-checkbox" />Minecraft</label>
+         <label><input name="prefer" value="FIFA" type="checkbox" class="input-checkbox" />FIFA</label>
+         <label><input name="prefer" value="Mario" type="checkbox" class="input-checkbox" />Mario bros</label>
+         <label><input name="prefer" value="RDR" type="checkbox" class="input-checkbox" />Red Dead Redemption</label>
+      </div>
 
-                <div class="form-group">
-                    <p>
-                        Cual de estos juegos te gustan?
-                        <span class="opcionales"
-                            >(Selecciona todos los que te gusten)</span
-                        >
-                    </p>
+      <div>
+         <label>Cualquier comentario o sugerencias?</label>
+         <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Introduzca su comentario aqui..."></textarea>
+      </div>
+      <div>
+         <button type="submit" id="submit" class="submit-boton">Subir</button>
+      </div>
+   </form>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
 
-                    <label>
-                        <input
-                            name="prefer"
-                            value="GTAV"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Grand Theft Auto V</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="Among-Us"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Among Us</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="lol"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />League of Legends</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="Fornite"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Fornite</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="Fall-Guys"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Fall Guys</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="GOW"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />God Of War</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="Minecraft"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Minecraft</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="FIFA"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />FIFA</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="Mario"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Mario bros</label
-                    >
-                    <label
-                        ><input
-                            name="prefer"
-                            value="RDR"
-                            type="checkbox"
-                            class="input-checkbox"
-                        />Red Dead Redemption</label
-                    >
-                </div>
-
-                <div class="form-group">
-                    <p>Cualquier comentario o sugerencias?</p>
-                    <textarea
-                        id="comments"
-                        class="input-textarea"
-                        name="comment"
-                        placeholder="Introduzca su comentario aqui..."
-                    ></textarea>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" id="submit" class="submit-boton">Subir</button>
-                </div>
-            </form>
-        </div>
-    </body>
 </html>
