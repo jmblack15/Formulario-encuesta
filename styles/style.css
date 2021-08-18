@@ -108,3 +108,11 @@ header #description {
    text-transform: uppercase;
    font-weight   : 500;
 }
+
+@media (min-width: 800px){
+   #survey-form{
+      max-width: 790px;
+      margin: 0 auto;
+   }
+
+} 
