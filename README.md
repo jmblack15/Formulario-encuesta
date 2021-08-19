@@ -2,7 +2,7 @@
 
 Pagina web donde se evidencia un Formulario con HTML y Estilos con CSS
 
-puedes verlo [aqui](https://github.com/jmblack15/Formulario-encuesta).
+puedes verlo [aqui](https://jmblack15.github.io/Formulario-encuesta/).
 
 ## Por qué esta pagina?
 
