@@ -1,4 +1,4 @@
-# Formulario de encuesta#  
+# Formulario de encuesta
 
 Pagina web donde se evidencia un Formulario con HTML y Estilos con CSS
 
